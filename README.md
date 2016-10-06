@@ -7,9 +7,13 @@
 
 ## Getting Started
 
+Make sure you have a recent [Node](https://nodejs.org/en/) version (6.0.0 should work). Then, install the package.
+
 ```
 $ npm install redux-definer --save
 ```
+
+Now, define some action handlers, a reducer, and a Redux store.
 
 ```javascript
 import { defineReducer } from "redux-definer";
