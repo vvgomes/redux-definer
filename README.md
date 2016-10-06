@@ -19,8 +19,8 @@ Now, define some action handlers, a reducer, and a Redux store.
 import { defineReducer } from "redux-definer";
 import { createStore } from "redux";
 
-const INCREMENT_COUNTER: (state, action) => state + 1;
-const DECREMENT_COUNTER: (state, action) => state - 1;
+const INCREMENT_COUNTER = (state, action) => state + 1;
+const DECREMENT_COUNTER = (state, action) => state - 1;
 
 const reducer = defineReducer({ INCREMENT_COUNTER, DECREMENT_COUNTER });
 const store = createStore(reducer, 0);
