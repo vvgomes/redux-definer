@@ -1,9 +1,9 @@
-# redux-definer 🐈 
+# Redux Definer 🐈 
 
 [![build status](https://travis-ci.org/vvgomes/redux-definer.svg?branch=master)](https://travis-ci.org/vvgomes/redux-definer)
 [![npm version](https://img.shields.io/npm/v/redux-definer.svg)](https://www.npmjs.com/package/redux-definer)
 
-**Redux-definer** is a tiny but useful library that helps you to build reducers in a clean way. The idea is inspired by this [blog post](http://vvgomes.com/better-reducers/).
+**Redux Definer** is a tiny but useful library that helps you to build reducers in a clean way. The idea is inspired by this [blog post](http://vvgomes.com/better-reducers/).
 
 ## Getting Started
 
@@ -77,7 +77,7 @@ In summary, the underlying algorithm behind `defineReducer` can be described as:
 - Then, it executes the matching behavior returning a new state.
 - In case there is no match, it returns the unchanged state.
 
-To get more details on the way it was implemented, take a look at the [blog post](http://vvgomes.com/better-reducers/). To see **redux-definer** in action, take a look at the [Redux Todo](https://github.com/vvgomes/redux-todo/) example.
+To get more details on the way it was implemented, take a look at the [blog post](http://vvgomes.com/better-reducers/). To see Redux Definer in action, take a look at the [Redux Todo](https://github.com/vvgomes/redux-todo/) example.
 
 ## License
 
