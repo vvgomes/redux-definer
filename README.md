@@ -65,19 +65,19 @@ function reducer (state = [], action) {
 }
 ```
 
-The code in the snipet above is quite busy. The action handling logic is blended together with the reducer pattern matching logic, which makes it not very scalable and easily testable.
+The code in the snipet above is quite busy. The action handling logic is blended together with the reducer pattern matching logic, which makes it not very scalable or easily testable.
 
 ### `defineReducer`
 
-As you can see in *Getting Started* example, with the `defineReducer` isolates the reducer pattern matching logic and gives you the ability of defining a reducer by passing a map of action handlers. Each handler in this case is an idependent function that can be tested in isolation. 
+As you can see in *Getting Started* example, the `defineReducer` function isolates the reducer pattern matching logic and gives you the ability to define a reducer by just providing a map of action handlers. Each handler in this case is an idependent function which can be tested in isolation. 
 
-The underlying algorithm behind `defineReducer` can be described as:
+In summary, the underlying algorithm behind `defineReducer` can be described as:
 
-- It chooses a behavior by pattern-matching the action.type;
-- Then, it executes the matching behavior returning a new state;
+- It chooses a behavior by pattern-matching the `action.type`.
+- Then, it executes the matching behavior returning a new state.
 - In case there is no match, it returns the unchanged state.
 
-To get more details on the way it was implemented, take a look at the [blog post](http://vvgomes.com/better-reducers/). To see **redux-definer** in action, take a look at this [Redux Todo](https://github.com/vvgomes/redux-todo/) example.
+To get more details on the way it was implemented, take a look at the [blog post](http://vvgomes.com/better-reducers/). To see **redux-definer** in action, take a look at the [Redux Todo](https://github.com/vvgomes/redux-todo/) example.
 
 ## License
 
