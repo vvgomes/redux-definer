@@ -3,7 +3,7 @@
 [![build status](https://travis-ci.org/vvgomes/redux-definer.svg?branch=master)](https://travis-ci.org/vvgomes/redux-definer)
 [![npm version](https://img.shields.io/npm/v/redux-definer.svg)](https://www.npmjs.com/package/redux-definer)
 
-**Redux Definer** is a tiny but useful library that helps you to build reducers in a clean way. The idea is inspired by this [blog post](http://vvgomes.com/better-reducers/).
+Redux Definer is a tiny but useful library that helps you to build reducers in a clean way. The idea is inspired by this [blog post](http://vvgomes.com/better-reducers/).
 
 ## Getting Started
 
@@ -24,14 +24,15 @@ const DECREMENT_COUNTER = (state, action) => state - 1;
 
 const reducer = defineReducer({ INCREMENT_COUNTER, DECREMENT_COUNTER });
 const store = createStore(reducer, 0);
-
 console.log(store.getState()); // => 0
 
 store.dispatch({ type: "INCREMENT_COUNTER" });
 store.dispatch({ type: "INCREMENT_COUNTER" });
 store.dispatch({ type: "DECREMENT_COUNTER" });
 store.dispatch({ type: "INCREMENT_COUNTER" });
+console.log(store.getState()); // => 2
 
+store.dispatch({ type: "INVALID" });
 console.log(store.getState()); // => 2
 
 ```
