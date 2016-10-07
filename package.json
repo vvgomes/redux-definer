@@ -1,6 +1,6 @@
 {
   "name": "redux-definer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Better Redux Reducers",
   "main": "dist/define.reducer.js",
   "author": "vvgomes",
